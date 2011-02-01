@@ -1,4 +1,3 @@
-# $Id$
 package AnyEvent::YIM::Util;
 
 # Copyright (c) 2010, Yahoo! Inc. All rights reserved.

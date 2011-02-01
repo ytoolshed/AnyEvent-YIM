@@ -1,4 +1,4 @@
-package AnyEvent::YIM::Constants;
+#!/usr/bin/env perl -w
 
 # Copyright (c) 2010, Yahoo! Inc. All rights reserved.
 #
@@ -13,5 +13,21 @@ package AnyEvent::YIM::Constants;
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+use Test::More qw(no_plan);
+use FindBin qw($Bin);
+use Carp qw(confess);
+
+use lib "$Bin/../lib";
+use lib "$Bin/lib";
+
+use AnyEventYIMTester;
+
+run_tests
+{
+  print "Hello, World!\n";
+  sleep 10;
+  print "Goodbye, World!\n";
+};
 
 1;
