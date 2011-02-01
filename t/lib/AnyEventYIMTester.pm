@@ -34,6 +34,7 @@ my $auth_server_pid     = undef;
 my $auth_server_cv      = undef;
 my $auth_server_content = {
   '/config/pwtoken_get'   => "0\nymsgr=YMSGR_TOKEN-\npartnerid=YMSGR_PARTNERID-\n",
+  '/config/pwgoken_login' => "0\ncrumb=CRUMB_Y=YCOOKIE; path=/; domain=.yahoo.com\nT=TCOOKIE; path=/; domain=.yahoo.com\ncookievalidfor=86400\n"
 };
 
 END
