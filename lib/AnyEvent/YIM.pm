@@ -443,7 +443,6 @@ sub connect
 
     $self->{_sock} = AnyEvent::Handle->new(
       fh        => $fh,
-      autocork  => 1,
       on_eof    => sub {
         $self->disconnect( "EOF: $!" );
       },
